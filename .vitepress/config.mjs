@@ -1,23 +1,25 @@
 import { defineConfig } from "vitepress"
 import { set_sidebar } from "../utils/auto_sidebar.js" // 改成自己的路径
-console.log(set_sidebar("front-end/js"))
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Web-Note",
   base: "/vitepress-note",
   description: "前端学习笔记",
-  head: [["link", { rel: "icon", href: "/icons8-run.gif" }]],
+  head: [["link", { rel: "icon", href: "run.svg" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "icons8-run.gif",
+    logo: "run.svg",
     nav: [
       {
         text: "前端",
         collapsed: false,
         items: [
-          { text: "JavaScript", link: "/front-end/js/index" },
-          { text: "Vue", link: "/front-end/vue/index" },
+          {
+            text: "JavaScript",
+            link: "/front-end/js/Javascript基础/Promise",
+          },
+          { text: "Vue", link: "/front-end/vue/vue入门" },
         ],
       },
       {
@@ -27,8 +29,8 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "/front-end/js": set_sidebar("/front-end/js"),
-      "/front-end/vue": set_sidebar("/front-end/vue"),
+      "/front-end/js": [{ items: set_sidebar("/front-end/js") }],
+      "/front-end/vue": [{ items: set_sidebar("/front-end/vue") }],
     },
 
     search: {
@@ -56,7 +58,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/doufu101?tab=repositories" },
     ],
   },
 })

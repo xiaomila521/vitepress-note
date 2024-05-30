@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /front-end/js/base
+      link: /front-end/js/Javascript基础/Promise.md
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/doufu101?tab=repositories
 
 features:
   - title: 💡 小建议
