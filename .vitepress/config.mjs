@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress"
+import { set_sidebar } from "../utils/auto_sidebar.js" // 改成自己的路径
+console.log(set_sidebar("front-end/js"))
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,13 +26,11 @@ export default defineConfig({
       },
     ],
 
-    sidebar: [
-      {
-        text: "JavaScript",
-        collapsed: false,
-        items: [{ text: "JavaScript高级", link: "/front-end/js/base.md" }],
-      },
-    ],
+    sidebar: {
+      "/front-end/js": set_sidebar("/front-end/js"),
+      "/front-end/vue": set_sidebar("/front-end/vue"),
+    },
+
     search: {
       provider: "local",
       options: {
