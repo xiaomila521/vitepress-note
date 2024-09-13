@@ -25,6 +25,10 @@ export default defineConfig({
             text: "面试题",
             link: "/front-end/other/cookie、session、token.md",
           },
+          {
+            text: "场景题",
+            link: "/front-end/scene/一键批量运行前端项目.md",
+          },
         ],
       },
       {
@@ -37,6 +41,7 @@ export default defineConfig({
       "/front-end/js": [{ items: set_sidebar("/front-end/js") }],
       "/front-end/vue": [{ items: set_sidebar("/front-end/vue") }],
       "/front-end/other": [{ items: set_sidebar("/front-end/other") }],
+      "/front-end/scene": [{ items: set_sidebar("/front-end/scene") }],
     },
 
     search: {
