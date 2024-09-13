@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Web-Note",
   base: "/vitepress-note",
   description: "前端学习笔记",
+  appearance: "dark",
   head: [["link", { rel: "icon", href: "run.svg" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -20,6 +21,10 @@ export default defineConfig({
             link: "/front-end/js/Javascript基础/Promise",
           },
           { text: "Vue", link: "/front-end/vue/vue入门" },
+          {
+            text: "面试题",
+            link: "/front-end/other/cookie、session、token.md",
+          },
         ],
       },
       {
@@ -31,6 +36,7 @@ export default defineConfig({
     sidebar: {
       "/front-end/js": [{ items: set_sidebar("/front-end/js") }],
       "/front-end/vue": [{ items: set_sidebar("/front-end/vue") }],
+      "/front-end/other": [{ items: set_sidebar("/front-end/other") }],
     },
 
     search: {
