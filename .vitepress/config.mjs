@@ -23,11 +23,11 @@ export default defineConfig({
           { text: "Vue", link: "/front-end/vue/vue入门" },
           {
             text: "面试题",
-            link: "/front-end/other/cookie、session、token.md",
+            link: "/front-end/other/cookie、session、token",
           },
           {
             text: "场景题",
-            link: "/front-end/scene/一键批量运行前端项目.md",
+            link: "/front-end/scene/一键批量运行前端项目",
           },
         ],
       },
