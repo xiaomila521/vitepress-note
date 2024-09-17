@@ -37,7 +37,7 @@ export default defineConfig({
         items: [
           {
             text: "基础",
-            link: "/front-end/python/基础/容器",
+            link: "/front-end/python/基础",
           },
         ],
       },
