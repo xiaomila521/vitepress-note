@@ -13,7 +13,7 @@ export default defineConfig({
     logo: "run.svg",
     nav: [
       {
-        text: "前端",
+        text: "Web",
         collapsed: false,
         items: [
           {
@@ -27,6 +27,16 @@ export default defineConfig({
           {
             text: "场景题",
             link: "/front-end/scene/一键批量运行前端项目"
+          }
+        ]
+      },
+      {
+        text: "Python",
+        collapsed: false,
+        items: [
+          {
+            text: "基础",
+            link: "/front-end/python/基础"
           }
         ]
       },
@@ -59,7 +69,8 @@ export default defineConfig({
     sidebar: {
       "/front-end/js": [{ items: set_sidebar("/front-end/js") }],
       "/front-end/other": [{ items: set_sidebar("/front-end/other") }],
-      "/front-end/scene": [{ items: set_sidebar("/front-end/scene") }]
+      "/front-end/scene": [{ items: set_sidebar("/front-end/scene") }],
+      "/front-end/python": [{ items: set_sidebar("/front-end/python") }]
     },
 
     search: {
