@@ -18,18 +18,17 @@ export default defineConfig({
         items: [
           {
             text: "JavaScript",
-            link: "/front-end/js/Javascript基础/Promise",
+            link: "/front-end/js/Javascript基础/Promise"
           },
-          { text: "Vue", link: "/front-end/vue/vue入门" },
           {
             text: "面试题",
-            link: "/front-end/other/cookie、session、token",
+            link: "/front-end/other/cookie、session、token"
           },
           {
             text: "场景题",
-            link: "/front-end/scene/一键批量运行前端项目",
-          },
-        ],
+            link: "/front-end/scene/一键批量运行前端项目"
+          }
+        ]
       },
       {
         text: "Node",
@@ -37,21 +36,30 @@ export default defineConfig({
         items: [
           {
             text: "Koa",
-            link: "/front-end/Node/koa",
-          },
-        ],
+            link: "/front-end/Node/koa"
+          }
+        ]
+      },
+      {
+        text: "Python",
+        collapsed: false,
+        items: [
+          {
+            text: "基础",
+            link: "/front-end/Python/basic"
+          }
+        ]
       },
       {
         text: "Home",
-        link: "/",
-      },
+        link: "/"
+      }
     ],
 
     sidebar: {
       "/front-end/js": [{ items: set_sidebar("/front-end/js") }],
-      "/front-end/vue": [{ items: set_sidebar("/front-end/vue") }],
       "/front-end/other": [{ items: set_sidebar("/front-end/other") }],
-      "/front-end/scene": [{ items: set_sidebar("/front-end/scene") }],
+      "/front-end/scene": [{ items: set_sidebar("/front-end/scene") }]
     },
 
     search: {
@@ -60,26 +68,26 @@ export default defineConfig({
         translations: {
           button: {
             buttonText: "搜索文档",
-            buttonAriaLable: "搜索文档",
+            buttonAriaLable: "搜索文档"
           },
           modal: {
             onRelutsText: "无法找到相关结果",
             resetButtonTitle: "清除查询条件",
             footer: {
               selectText: "选择",
-              navigateText: "切换",
-            },
-          },
-        },
-      },
+              navigateText: "切换"
+            }
+          }
+        }
+      }
     },
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2024-present Evan You",
+      copyright: "Copyright © 2024-present Evan You"
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/doufu101?tab=repositories" },
-    ],
-  },
+      { icon: "github", link: "https://github.com/doufu101?tab=repositories" }
+    ]
+  }
 })
