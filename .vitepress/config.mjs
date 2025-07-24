@@ -30,33 +30,33 @@ export default defineConfig({
           }
         ]
       },
+      // {
+      //   text: "Node",
+      //   collapsed: false,
+      //   items: [
+      //     {
+      //       text: "Koa",
+      //       link: "/front-end/Node/koa"
+      //     }
+      //   ]
+      // },
+      {
+        text:"PHP",
+        collapsed: false,
+         items: [
+          {
+            text: "基础",
+            link: "/front-end/PHP/基础"
+          }
+        ]
+      },
       {
         text: "Python",
         collapsed: false,
         items: [
           {
             text: "基础",
-            link: "/front-end/python/基础"
-          }
-        ]
-      },
-      {
-        text: "Node",
-        collapsed: false,
-        items: [
-          {
-            text: "Koa",
-            link: "/front-end/Node/koa"
-          }
-        ]
-      },
-      {
-        text: "Python",
-        collapsed: false,
-        items: [
-          {
-            text: "基础",
-            link: "/front-end/Python/basic"
+            link: "/front-end/Python/basic/List"
           }
         ]
       },
